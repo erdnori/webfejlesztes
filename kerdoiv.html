@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A görög mitológia és a görög istenek">
+    <meta name="author" content="Erdei Nóra">
+    <meta name="copyright" content="Az oldal oktatási célokra jött létre">
+    <link rel="stylesheet" href="gorog_istenek.css">
+    <link rel="icon" type="image/x-icon" href="kepek/egyeb/favicon.png">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#urlap").validate({
+                rules: {
+                    vezeteknev: "required",
+                    keresztnev: "required",
+                    szuletesi_datum: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefonszam: {
+                        required: true,
+                        digits: true,
+                    },
+                    kedvenc_isten: "required",
+                    szuperero: "required",
+                    skala: "required",
+                    valasztas: "required",
+                    jatekszabalyzat: "required",
+                    adatvedelmi_nyilatkozat: "required",
+                },
+                messages: {
+                    vezeteknev: " Kérlek írd be a vezetékneved!",
+                    keresztnev: " Kérlek írd be a keresztneved!",
+                    szuletesi_datum: " Kérlek add meg, hogy mikor születtél!",
+                    email: " Kérlek valós email címet adj meg!",
+                    telefonszam: {
+                        required: " Kérlek add meg a telefonszámod!",
+                        digits: " Kérlek valós telefonszámot adj meg!",
+                    },
+                    kedvenc_isten: " Kérlek válassz egy opciót!",
+                    szuperero: " Kérlek írj egy választ!",
+                    skala: " Kérlek értékelj!",
+                    valasztas: " Kérlek válassz egy opciót!",
+                    jatekszabalyzat: " Kérlek fogadd el feltételeinket!",
+                    adatvedelmi_nyilatkozat: " Kérlek fogadd el feltételeinket!",
+                },
+            });
+        });
+    </script>
+    <title>Az olümposzi istenek</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="focim">Az olümposzi istenek</h1>
+
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Mitológia</a></li>
+                <li><a href="tortenet.html">Teremtéstörténet</a></li>
+                <li><a href="istenek.html">Istenek</a></li>
+                <li><a href="#" class="active">Kérdőív</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <main>
+                <h2 class="alcim">Nyerj egy felejthetetlen utazást a görög istenek országába!</h2>
+
+
+            <article class="nyeremeny">
+                <div>
+                    <video autoplay muted loop>
+                        <source src="video/greece.mp4" type="video/mp4">
+                        A böngésződ nem támogatja a videók lejátszását.
+                    </video>
+                </div>
+                <div class="video-melletti-szoveg">
+                    <p class="bevezetes">
+                        Most itt a lehetőség, hogy egy varázslatos <span class="kerdoiv-span">5 napos</span> családi
+                        utazást nyerj <span class="kerdoiv-span">Görögországba</span>!<br><br>
+                        Töltsd ki kérdőívünket, és válaszolj néhány egyszerű kérdésre, hogy esélyed legyen megnyerni a
+                        következő fantasztikus nyereményt:
+                    </p>
+                    <div>
+                        <ul><br>
+                            <li><span class="kerdoiv-span">Repülőjegy oda-vissza </span> egy görög városba vagy
+                                szigetre, például Athén, Santorini, Rodosz vagy Delphoi -
+                                válaszd ki Te, hogy melyik csodálatos helyet szeretnéd felfedezni!</li><br>
+                            <li><span class="kerdoiv-span">Szállás</span> 5 csillagos vagy prémium kategóriájú
+                                szállodában, ahol kényelem és luxus vár
+                                rád.
+                            </li><br>
+                            <li>Személyre szabott <span class="kerdoiv-span">túrák</span> és <span
+                                    class="kerdoiv-span">programok</span> - egy autentikus görög túra, amely elvezet a
+                                híres
+                                mitológiai helyszínekre, mint például az Akropolisz vagy a Delphi Orákulum.</li><br>
+                            <li>Görög <span class="kerdoiv-span">gasztronómiai élmények</span> - kóstold meg a helyi
+                                finomságokat, mint a moussaka,
+                                souvlaki és a híres görög saláta egy tradicionális tavernában.</li><br>
+                            <li><span class="kerdoiv-span">Extra meglepetések</span> - fedezd fel Görögországot egy
+                                borkóstolón, élvezd a vízi sportokat,
+                                és vidd haza az élményt egy helyi ajándékcsomaggal!</li><br>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <div class="kerdoiv">
+                <form action="https://rf.uni-corvinus.hu/webfejlesztes/receive.php" method="post" id="urlap" novalidate>
+
+                    <p>
+                        <label for="vezeteknev">Vezetéknév:</label><br>
+                        <input type="text" name="vezeteknev" id="vezeteknev" size="30">
+                    </p>
+
+                    <p>
+                        <label for="keresztnev">Keresztnév:</label><br>
+                        <input type="text" name="keresztnev" id="keresztnev" size="30">
+                    </p>
+
+                    <p>
+                        <label for="szuldatum">Születési dátum:</label><br>
+                        <input type="date" name="szuletesi_datum" id="szuldatum">
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" name="email" id="email" size="30">
+                    </p>
+
+                    <p>
+                        <label for="telefon">Telefonszám:</label><br>
+                        <input type="tel" name="telefonszam" id="telefon" placeholder="pl.: 06303456789" size="30"
+                            maxlength="11">
+                    </p>
+
+
+                    <p>
+                        <label for="kedvenc_isten">Melyik a kedvenc görög istened?</label><br>
+
+                        <select name="kedvenc_isten" id="kedvenc_isten" size="1">
+                            <option value="Aphrodité">Aphrodité</option>
+                            <option value="Apollón">Apollón</option>
+                            <option value="Árész">Árész</option>
+                            <option value="Artemisz">Artemisz</option>
+                            <option value="Athéné">Athéné</option>
+                            <option value="Démétér">Démétér</option>
+                            <option value="Dionüszosz">Dionüszosz</option>
+                            <option value="Hádész">Hádész</option>
+                            <option value="Héphaisztosz">Héphaisztosz</option>
+                            <option value="Héra">Héra</option>
+                            <option value="Hermész">Hermész</option>
+                            <option value="Hádész">Hesztia</option>
+                            <option value="Poszeidón">Poszeidón</option>
+                            <option value="Zeusz">Zeusz</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="uzenet">Ha egy lennél közülük, milyen különleges szupererőt birtokolnál és
+                            miért?</label><br>
+                        <textarea id="uzenet" name="szuperero" rows="4" cols="39" style="resize:none"
+                            style="overflow: scroll;"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="skala">Mennyire találod érdekesnek a görög mitológiát?</label>
+                        <br>
+                        1 <input type="range" min="1" max="5" name="skala" id="skala"> 5
+                        <br>
+                    </p>
+
+                    <p>
+                        <label for="konyvfilm">Láttál/olvastál már olyan filmet/könyvet, amelyben megjelenik ez a
+                            témakör?</label><br>
+                            <label for="igen">Igen</label><input type="radio" id="igen" name="valasztas" value="Igen"><br>
+                            <label for="nem">Nem</label><input type="radio" id="nem" name="valasztas" value="Nem">
+                    </p>
+
+                    <p>
+                        <label for="jatekszabalyzat">Megismertem és elfogadom a <a href="javascript:void(0);"
+                                class="kicsi-link">Játékszabályzatot</a>.</label>
+                                <input type="checkbox" id="jatekszabalyzat" name="jatekszabalyzat" value="jatekszabalyzat">
+                        <br>
+                        <label for="adatvedelmi">Hozzájárulok a személyes adataim az <a href="javascript:void(0);"
+                                class="kicsi-link">Adatvédelmi nyilatkozatban</a> rögzítettek szerint történő
+                            kezeléséhez.</label>
+                            <input type="checkbox" id="adatvedelmi" name="adatvedelmi_nyilatkozat" value="adavedelmi">
+                    </p>
+
+                    <p class="gombok">
+                        <input type="reset" name="reset" value="Törlés">
+                        <input type="submit" name="submit" value="Küldés">
+                    </p>
+                </form>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Az olümposzi istenek. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+
+</html>
