@@ -3,7 +3,7 @@
 Oldal készítője: Erdei Nóra
 
 2. 
-https://github.com/erdnori/webfejlesztes.git
+https://erdnori.github.io/webfejlesztes/
 
 3. 
 Weboldalam témája a görög istenekről szól, melyben bevezetésként 
