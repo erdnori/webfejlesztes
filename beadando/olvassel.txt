@@ -1,0 +1,38 @@
+
+1. 
+Oldal készítője: Erdei Nóra
+
+2. 
+https://github.com/erdnori/webfejlesztes.git
+
+3. 
+Weboldalam témája a görög istenekről szól, melyben bevezetésként 
+a görög mitológiáról írok pár mondatban, továbbá pedig a görög istenek mitológia szerinti teremtéséről és bemutatásáról írok.
+A kvízben megtudhatod 'Melyik görög isten vagy'.
+A nyereményjáték fülön pedig a témához kapcsolódóan egy utazást lehet nyerni Görögországba.
+
+4. 
+A 3. oldalon található a JS kódom, a görög istenek fül alatt. Az egyik kód lényege, hogy ha az istenek
+képe fölé viszed az egeret, akkor megjelenik a saját egyedi színe mögötte halványan, míg ha rákattintasz akkor a szerepük is megjelenik
+a saját háttérszínükkel alattuk. A másik kódra ugyanezen az oldalon lehet eljutni, ez egy kvíz melyben megtudhatod 'Melyik görög isten vagy'.
+
+
+5. 
+Az összes oldalon keresztül google web fontot használtam, 4 fajtát:
+   Beau Rivage -> a 'header' részben a főcímnek
+   Cinzel -> a 'nav' részben a menünek, illetve a 'h2'-es alcímeknek az összes oldalon
+   Forum -> ez az alap betűtípus, amit a szövegeknek adtam a 'main', illetve a 'footer' részben
+   Indie Flower -> az utolsó oldalon az űrlapnál
+
+6.
+Képek:
+ ->header: Bayeu y Subias, Francisco - Olympus, The Fall of the Giants; link: https://www.wga.hu/html_m/b/bayeu/francisc/olympus.html
+ ->1. oldal szobrok: vecteezy.com
+ ->2. oldal, 3. oldal, favicon: ChatGPT 40 generálta
+ ->kvíz képek: pixabay.com
+
+Szöveg: ChatGPT 40 generálta
+
+
+Átvettem: az űrlap résznél a háttér design-t, forrás: stackoverflow.com
+

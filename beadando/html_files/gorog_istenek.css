@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/*ALAPBEÁLLÍTÁSOK*/
+*{
+    box-sizing: border-box;
+}
+
+html{
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body{
+    background-color: #b8a99d;
+    padding: 0px;
+    margin: 0px;
+}
+
+article{
+    padding-bottom: 1.5em;
+}
+
+main{
+    font-family: "Forum", serif;
+    padding: 0px;
+    margin: 20px 30px 20px 30px;
+    padding-top: 5px; 
+}
+
+header{
+    display: flex;
+    background-image: url("../kepek/egyeb/header_image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    height: 280px;
+    padding: 0px;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Forum", serif;
+    font-size: 20px;
+    padding: 10px;
+    background-color: antiquewhite;
+    color: #5d4b42;
+    border-top: 5px ridge antiquewhite;
+}
+
+/*CÍMEK*/
+
+#focim{
+    text-align: center;
+    color: antiquewhite;
+    font-family: "Beau Rivage", serif;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 4px;
+    font-size: 10vw;
+}
+
+h2{
+    font-family:"Cinzel",serif;
+    font-weight: bold;
+    color:antiquewhite;
+    font-size: 25px;
+}
+
+.alcim{
+    text-align: center;
+    font-size: 30px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px #5d4b42;
+    margin: 30px 0 30px 0;
+}
+
+/*NAVIGATION*/
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: antiquewhite;
+    border-bottom: 5px groove antiquewhite;
+    border-top: 5px ridge antiquewhite;
+    flex-basis: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    justify-content: space-evenly;
+    flex: 1 1 100%;
+}
+
+nav li{
+    flex: 1 1 100%;
+}
+
+nav a{
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family:"Cinzel",serif;
+    color: #7f6f5f;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+nav a:hover{
+    background-color: #b8a99d;
+    transition: 0.5s;
+    color: antiquewhite;
+}
+
+.active{
+    background-color: #b8a99d;
+    color: antiquewhite;
+}
+
+/*SZÍNEK 1.o.*/
+.gorog-mitologia1, .gorog-mitologia2, .gorog-mitologia3{
+    border: 5px ridge rgb(204, 204, 204);
+    background-color: #dcdcdc;
+    border-radius: 15px;
+    padding: 0;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+    flex-basis: 100%;
+}
+
+.gorog-mitologia1{
+    order: 1;
+}
+
+.gorog-mitologia2{
+    order: 4;
+}
+
+.gorog-mitologia3{
+    order: 5;
+}
+
+.boxcim{
+    color: #333333;
+}
+.gorog-mitologia3 span{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+/*KÉPEK*/
+figure{
+    text-align: center;
+    max-width: 100%;
+}
+.tortenet-kep img{
+    max-width: 80%;
+    border-radius: 15px;
+    border: 5px ridge antiquewhite;
+    /*width: 350px;*/
+    box-shadow: 5px 5px 10px black;
+}
+.tortenet-kep img:hover{
+    box-shadow: -5px 5px 10px black;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.szobor1 img, .szobor2 img{
+    max-width: 100%;
+    border: 0;
+}
+
+.szobor1{
+    flex-flow: 1;
+    flex-basis: 49%;
+    order: 3;
+}
+
+.szobor2{
+    flex-flow: 1;
+    flex-basis: 49%;
+    order: 2;
+}
+.szobor1 img:hover, .szobor2 img:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+
+}
+
+figure{
+    margin: 0;
+}
+
+/*KÉPSZÖVEGEK*/
+
+.tortenet-kep figcaption{
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+    margin-top: 10px;
+}
+
+p{
+    text-align: justify; /*legyen sorkizárt a szöveg*/
+}
+
+/*Első oldal flexbeállításai és egyéb*/
+.egymasmellett, .egymasmellett2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*KÉPGALÉRIA*/
+
+.slider{
+    width: 100%;
+    margin: 20px auto 50px auto;
+}
+
+.slick-slide {
+    margin: 0px 5px;
+    
+}
+
+.slick-slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #333333;
+}
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .3;
+}
+
+.slick-active {
+    opacity: .5;
+}
+
+.slick-center{
+    opacity: 1;
+
+}
+
+.slick-center img {
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #513B37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*Második oldal flexbeállításai és egyéb*/
+
+.szoveg h2, .kviz h2{
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px #5d4b42
+}
+.teremtes-bevezetes{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 15px;
+    border: 5px ridge antiquewhite;
+}
+hr{
+    border: 1px solid #513B37;
+    color: #513B37;
+    box-shadow: 0 0 20px #513B37;
+}
+
+/*Harmadik oldal további beállítások*/
+.isten-kepek img{
+    max-width: 240px;
+    margin: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.istenek{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 1;
+}
+
+.isten-kepek figcaption{
+    margin: 0 0 20px 0;
+    padding: 0px;
+    font-size: 20px;
+    font-style: normal;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+.tartalom{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aside{
+    border: 1px solid #513B37;
+    box-shadow: 0 0 16px #513B37;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    color: antiquewhite;
+    order: 2;
+    height: fit-content;
+}
+.aside h2{
+    color:#513B37;
+    text-shadow: 2px 2px 2px antiquewhite;
+}
+.erdekessegek{
+    margin: auto 20px 20px 20px;
+    font-style: italic;
+    color: #513B37;
+}
+.istenek h2{
+    width: 100%; margin: 25.750px 0 20.750px 0; text-align: center; 
+    text-shadow: 2px 2px 2px #5d4b42;
+}
+
+/*.tartalom div p{
+    width: 280px;
+    height: 100px;
+    padding: 20px;
+}*/
+
+#melyik-teszt a{
+    text-decoration: none;
+    color: blue;
+    text-shadow: none;
+}
+.aside #melyik-teszt a:hover{
+    font-size: 26px;
+    transition: 0.3s;
+    color: white;
+    text-shadow: 0 0 20px blue;
+}
+
+/*KVÍZ*/
+.alcim a{
+    text-decoration: none;
+    font-size: 15px;
+    text-shadow: none;
+    color: blue;
+}
+.alcim a:hover{
+    font-size: 17px;
+    transition: 0.3s;
+    color: white;
+    text-shadow: 0 0 20px blue;
+}
+.kviz-valaszok-kep{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kviz-valaszok-kep img{
+    width: 200px; 
+}
+
+.kviz-valaszok-kep p{
+    flex-direction: row;
+    margin: auto 20px 20px 20px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-family: "Cinzel", serif;
+}
+
+button:hover{
+    transform: scale(1.05);
+    transition: .3s;
+    background-color: white;
+    color: blue;
+    font-size: larger;
+    box-shadow: 0 0 15px blue;
+
+}
+.kviz input[type=radio]{
+    accent-color: blue;
+}
+.kviz-gomb{
+    text-align: center;
+}
+
+.kviz img{
+    border-radius: 15px;
+}
+.kviz img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+#tesztZeusz, #tesztPoszeidon, #tesztHera, #tesztAthene{
+    background-color: goldenrod;
+    padding: 20px;
+    border-radius: 15px;
+    margin: auto 5% 5% 5%;
+    color: white;
+    box-shadow: 1px 1px 20px white;
+}
+/*-------------------------------------*/
+
+
+/*NYEREMÉNYJÁTÉK*/
+.nyeremeny{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.bevezetes{
+    font-size: 18px;
+}
+.nyeremeny ul li{
+    list-style-type: square;
+}
+.nyeremeny ul{
+    border-left: 5px ridge antiquewhite;
+}
+video{
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.kerdoiv{
+    padding: 1em;
+    background-color: #f3f9ff;
+    background-clip: padding-box; /*azért, hogy a háttér ne lépje túl a paddinget*/
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    border-image: url(../kepek/egyeb/paper-border.png) 30 round;
+    max-width:fit-content;
+    margin: 2em auto;
+    font-family: 'Indie Flower', cursive;
+}
+label.error {
+    color: #FB3A3A;
+}
+.gombok{
+    display: flex; 
+    justify-content: space-between;
+}
+.kicsi-link{
+    color: goldenrod;
+}
+.kicsi-link:hover{
+    color: #FFD700;
+}
+.kerdoiv-span{
+    color: #FFD700;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 120%;
+}
+textarea, input[type=text], input[type=email], input[type=date], input[type=tel]{
+    padding: 5px 20px 5px 20px;
+    width: 50%;
+    border-radius: 10px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+}
+input[type=date]{
+    cursor: pointer;
+}
+select{
+    padding: 5px 0px 5px 0px;
+    width: 50%;
+    border-radius: 10px;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    cursor: pointer;  
+}
+
+input[type=range]{
+    width: 50%;
+    accent-color: goldenrod;
+    cursor: pointer;
+}
+
+input[type=radio]{
+    accent-color: goldenrod;
+    cursor: pointer;
+}
+
+input[type=checkbox]{
+    accent-color: goldenrod;
+    cursor: pointer;
+}
+input[type=submit]{
+    background-color: goldenrod;
+    border: 0;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-family: "Cinzel", serif;
+}
+input[type=submit]:hover{
+    transform: scale(1.03);
+    box-shadow: 3px 3px 3px black;
+}
+
+input[type=reset]{
+    background-color: grey;
+    border: 0;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-family: "Forum", serif;
+}
+input[type=reset]:hover{
+    transform: scale(1.03);
+    box-shadow: 3px 3px 3px black;
+}
+/*-------------------------------------*/
+
+
+/* tabletre vonatkozó beállítások */
+@media only screen and (min-width: 600px){
+
+    .szobor1{
+        flex-basis: 49%; 
+    }
+    .szobor2{
+        flex-basis: 49%;
+    }
+
+    main{
+        margin: 20px 30px 20px 30px;
+    }
+
+    .istenek{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*KVÍZ*/
+    .kviz-valaszok-kep img{
+        width: 240px; 
+    }
+
+}
+
+/* számítógépre vonatkozó beállítások */
+@media only screen and (min-width: 768px){
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    .szobor1, .szobor2{
+        flex-grow: 1;
+        flex-basis: 29%;
+        max-width: 500px;
+    }
+
+    .gorog-mitologia1{
+        flex-grow: 1;
+        flex-basis: 69%;
+        order: 1;
+        margin: 5px 0 5px 0;
+    }
+    .gorog-mitologia2{
+        flex-grow: 1;
+        flex-basis: 69%;
+        order: 4;
+        margin: 5px 0 5px 0;
+    }
+
+    .szobor1{
+        order: 2;
+    }
+
+    .szobor2{
+        order: 3;
+    }
+
+    .szobor1 img, .szobor2 img{
+        width: 300px;
+    }
+
+    /*MÁSODIK OLDAL*/
+    .szoveg{
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding: 0 25px 0 25px;
+    }
+
+    .egymasmellett2{
+        flex-direction: row-reverse;
+    }
+
+    .tortenet-kep img{
+        max-width: 350px;
+    }
+
+    .tortenet-kep{
+        flex-grow:1;
+        margin: 20px 0 20px 0;
+    }
+
+    main{
+        margin: 20px 30px 20px 30px;
+    }
+
+    /*Harmadik oldal*/
+    .tartalom{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .aside{
+        order: 1;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .istenek{
+        order: 0;
+    }
+    
+    .istenek h2{
+        margin-bottom: 32px;
+    }
+
+    .erdekessegek{
+        margin: auto auto 20px auto;
+        width: 260px;
+    }
+
+
+    /*NYEREMÉNYJÁTÉK*/
+    .nyeremeny{
+        flex-direction: row;
+    }
+    .nyeremeny div{
+        flex-basis: 49%;
+    }
+    .video-melletti-szoveg{
+        padding: 20px;
+    }
+    video{
+        padding: 20px;
+        border-radius: 40px;
+    }
+    /*KVÍZ*/
+    .kviz-valaszok-kep img{
+        width: 280px; 
+    }
+    
+}
